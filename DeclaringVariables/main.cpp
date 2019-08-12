@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -20,5 +21,23 @@ int main()
     cout << "float " << sizeof(float) << " bytes" << endl;
     cout << "double " << sizeof(double) << " bytes" << endl;
     cout << "long double " << sizeof(long double) << " bytes" << endl;
+    
+    int test_scores [5] {100,90,50,90,85};
+    int movie_rating [3][4] 
+    {
+      {0,4,3,5},
+      {0,3,4,2},
+      {1,4,4,5}
+    };
+    cout << "First score at index 0: " << test_scores[0] << endl;
+    cout << "Second score at index 1: " << test_scores[0] << endl;
+    cout << "Third score at index 2: " << test_scores[0] << endl;
+    cout << "Fourth score at index 3: " << test_scores[0] << endl;
+    cout << "Fifth score at index 4: " << test_scores[0] << endl;
+    vector <char> vowels (5); //tells the compiler you want 5 characters
+    vector <int> games_scores (5); // tells the compiler you want 5 values
+    vector <double> temperatures (365,80.0); // initilize 365 doubles to 80.
+    cout << "First temperature at index 0: " << temperatures[0] << endl;
+    cout << "Second temperature at index 1: " << temperatures[1] << endl;
 	return 0;
 }
