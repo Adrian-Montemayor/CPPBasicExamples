@@ -20,5 +20,14 @@ int main()
         ++i;
     }
     cout << endl;
+    
+    char selection {};
+    do {
+        cout << "\n--------------" << endl;
+        cout << "(0) Quit" << endl;
+        cout << "(1) Do this" << endl;
+        cin >> selection;
+    }while(selection!='0');
+    
 	return 0;
 }
